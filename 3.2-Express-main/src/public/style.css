@@ -1,0 +1,233 @@
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.banner {
+  background: rgb(86, 81, 155);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top-nav a {
+  display: flex;
+  margin: 5px auto 5px;
+  background: rgb(86, 81, 155);
+}
+.top-nav-item a {
+  flex-basis: 25%;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+/*.top-nav a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  text-decoration: none;
+}
+*/
+.top-nav a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+.menu {
+  background: rgb(86, 81, 155);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 100px 0;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+}
+.coloring {
+  color: rgb(255, 255, 255);
+}
+.colored {
+  color: rgb(255, 0, 0);
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  z-index: 1000000;
+}
+
+.popup-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup-body {
+  min-height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup-window {
+  display: flex;
+  z-index: 1000000;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+}
+.popup_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-title {
+  position: relative;
+  font-size: 32px;
+  line-height: 72px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.scrolling {
+  overflow-y: scroll;
+}
+.sticky-block {
+  position: sticky;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.popup-table {
+  border-collapse: separate;
+  border-spacing: 20px 20px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 15px;
+}
+.card-icon {
+  height: 230px;
+}
+.card-icon-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+.card-title {
+  margin-bottom: 10px;
+  background: rgb(86, 81, 155);
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 40px;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-between;
+  border: 2px solid rgb(86, 81, 155);
+  border-radius: 4px;
+}
+.card-price-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px 10px;
+}
+.card-price {
+  font-size: 24px;
+}
+.card-button {
+  padding: 5px 20px;
+  background: rgb(86, 81, 155);
+  border-radius: 4px;
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  
+}
+.button {
+  padding: 16px 60px;
+  border: none;
+  border-radius: 24px;
+  font-size: 18px;
+  color: #000;
+  margin: 20px 0 5px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: rgb(86, 81, 155);
+  border-color: rgb(86, 81, 155);
+}
+.button:focus {
+  background-color: #53991c;
+  border-color: #306c00;
+}
+.button:active {
+  background-color: #306c00;
+  border-color: #306c00;
+}
+.list {
+  margin: 24px;
+  max-height: 350px;
+  border-top: 1px solid #c9d6e1;
+  border-bottom: 1px solid #c9d6e1;
+}
+.list-item {
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #c9d6e1;
+  color: #000f22;
+}
+.list-item:first-child {
+  border: none;
+}
+.list-item:hover {
+  background-color: aliceblue;
+}
+.list-item-title {
+  margin-left: 10px;
+}
+.list-item-price {
+  margin-left: 100px;
+}

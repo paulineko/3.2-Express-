@@ -1,0 +1,36 @@
+<%- include('../fragments/header.ejs') %>
+  <div class="popup-parent">
+    <div class="popup-template">
+      <div id="popup" class="popup">
+      <!-- <a href="/header" --> <div class="popup-area"> <!-- </a> -->
+        <div class="popup-body">
+          <div class="popup-window">
+            <div class="popup-content">
+              <a href="/" class="popup_close">X</a>
+              <div class="popup-title">Ваши покупки</div>
+            </div>
+            <div class="popup-text scrolling">
+              <% products.forEach(product=> { %>
+                <div class="list">
+                  <div class="list-template">
+                    <div class="list-item">
+                      <div class="list-item-title">
+                        <%= product.name %>
+                      </div>
+                      <div class="list-item-price">
+                        <%= product.price %>руб.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+            <div class="popup-title">
+              <button class="button">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
